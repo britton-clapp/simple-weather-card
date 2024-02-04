@@ -4,7 +4,7 @@ function getStyles(css) {
       display: flex;
       flex-flow: row;
       align-items: center;
-      padding: 16px;
+      padding: 1rem;
       color: var(--primary-text-color, #000);
       font-weight: var(--swc-font-weight, 400);
       transition: background 1s;
@@ -62,6 +62,13 @@ function getStyles(css) {
       padding-left: 8px;
       margin-left: auto;
       align-items: flex-end;
+    }
+    .weather__info__title, 
+    .weather__info__item {
+      font-size: 2rem;
+    }
+    .weather__info__unit {
+      color: gray;
     }
     .weather__info__state,
     .weather__info__title,

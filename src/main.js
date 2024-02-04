@@ -131,7 +131,7 @@ class SimpleWeatherCard extends LitElement {
         ${this.renderIcon()}
         <div class="weather__info">
           <span class="weather__info__title">
-            ${this.renderAttr("temp")} ${this.name}
+            ${this.renderAttr("temp")}
           </span>
           <span class="weather__info__state">
             ${this.renderAttr("state", false)}
@@ -205,7 +205,7 @@ class SimpleWeatherCard extends LitElement {
         ? this.custom[attr]
         : INFO[attr] || {};
 
-    return html` ${state} ${uom ? this.getUnit(unit) : ""} `;
+    return html` ${state}<span class="weather__info__unit">${uom ? this.getUnit(unit) : ""}</span> `;
   }
 
   handleTap() {
